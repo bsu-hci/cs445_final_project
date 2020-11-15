@@ -30,6 +30,14 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int counter = 0;
+
+  void counterIncrease() {
+    setState(() {
+      counter++;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,6 +49,10 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("Click a poster to join the presentation for that project."),
+            Text(
+              '$counter',
+              style: Theme.of(context).textTheme.headline4,
+            ),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Flexible(
                   child: Column(
@@ -54,7 +66,7 @@ class _HomePageState extends State<HomePage> {
                                 image: AssetImage('assets/exampleImage.jpg'))),
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
-                            onPressed: null,
+                            onPressed: counterIncrease,
                             child: null))
                   ])), //item 1
 
