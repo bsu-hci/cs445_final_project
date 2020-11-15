@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
               Flexible(
                 child: Text("sample text"),
               ), //item 2
-              Flexible(child: Text("Item 3")) //item 3
+              Flexible(child: Text("sample text")) //item 3
             ]), //end of row 1
 
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
