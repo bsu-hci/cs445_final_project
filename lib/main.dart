@@ -58,16 +58,26 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
+                    Text("Project 1 Title"),
                     Container(
-                        width: 100,
-                        height: 75,
+                        width: 280,
+                        height: 200,
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage('assets/exampleImage.jpg'))),
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
                             onPressed: counterIncrease,
-                            child: null))
+                            child: null)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                            width: 200, child: Text("Ball State University")),
+                        RaisedButton(
+                            onPressed: counterIncrease, child: Text("Evaluate"))
+                      ],
+                    )
                   ])), //item 1
 
               Flexible(
