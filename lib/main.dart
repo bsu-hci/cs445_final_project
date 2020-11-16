@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                   child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                    Text("Project 1 Title"),
+                    Text("Docker Simplifier"),
                     Container(
                         width: 280,
                         height: 200,
@@ -81,19 +81,132 @@ class _HomePageState extends State<HomePage> {
                   ])), //item 1
 
               Flexible(
-                child: Text("sample text"),
-              ), //item 2
-              Flexible(child: Text("sample text")) //item 3
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                    Text("Quantum Computing"),
+                    Container(
+                        width: 280,
+                        height: 200,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/exampleImage2.jpg'))),
+                        child: FlatButton(
+                            padding: EdgeInsets.all(0.0),
+                            onPressed: counterIncrease,
+                            child: null)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                            width: 200, child: Text("University of Findlay")),
+                        RaisedButton(
+                            onPressed: counterIncrease, child: Text("Evaluate"))
+                      ],
+                    )
+                  ])), //item 2
+              Flexible(
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                    Text("New Way to Synthesize Sound"),
+                    Container(
+                        width: 280,
+                        height: 200,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/exampleImage3.jpg'))),
+                        child: FlatButton(
+                            padding: EdgeInsets.all(0.0),
+                            onPressed: counterIncrease,
+                            child: null)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(width: 200, child: Text("Knox College")),
+                        RaisedButton(
+                            onPressed: counterIncrease, child: Text("Evaluate"))
+                      ],
+                    )
+                  ])), //item 3
             ]), //end of row 1
 
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Flexible(
-                child: Text("Item 4"),
-              ), //item 4
-              Flexible(child: Text("Item 5")), //item 5
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                    Text("Nanobots: The World of Tomorrow"),
+                    Container(
+                        width: 280,
+                        height: 200,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/exampleImage4.jpg'))),
+                        child: FlatButton(
+                            padding: EdgeInsets.all(0.0),
+                            onPressed: counterIncrease,
+                            child: null)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                            width: 200, child: Text("Spring Arbor University")),
+                        RaisedButton(
+                            onPressed: counterIncrease, child: Text("Evaluate"))
+                      ],
+                    )
+                  ])), //item 4
               Flexible(
-                child: Text("Item 6"),
-              ), //item 6
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                    Text("Virtual Reality and the Workplace"),
+                    Container(
+                        width: 280,
+                        height: 200,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/exampleImage5.jpg'))),
+                        child: FlatButton(
+                            padding: EdgeInsets.all(0.0),
+                            onPressed: counterIncrease,
+                            child: null)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(width: 200, child: Text("Augustana College")),
+                        RaisedButton(
+                            onPressed: counterIncrease, child: Text("Evaluate"))
+                      ],
+                    )
+                  ])), //item 5
+              Flexible(
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                    Text("Online Shopping Helper"),
+                    Container(
+                        width: 280,
+                        height: 200,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage('assets/exampleImage6.jpg'))),
+                        child: FlatButton(
+                            padding: EdgeInsets.all(0.0),
+                            onPressed: counterIncrease,
+                            child: null)),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Container(
+                            width: 200,
+                            child: Text("Northern Kentucky University")),
+                        RaisedButton(
+                            onPressed: counterIncrease, child: Text("Evaluate"))
+                      ],
+                    )
+                  ])), //item 6
             ]), //end of row 2
           ],
         ),
