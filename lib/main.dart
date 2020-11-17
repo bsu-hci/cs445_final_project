@@ -1,6 +1,7 @@
 import 'dart:html';
-
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'dart:async';
 
 void main() {
   runApp(CCSCMWConference());
@@ -30,6 +31,17 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  Future<void> launched;
+  String launchURL = "https://www.google.com";
+
+  Future<void> launchInBrowser(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url, forceSafariVC: false, forceWebView: false);
+    } else {
+      print("Could not launch URL");
+    }
+  }
+
   int counter = 0;
 
   void counterIncrease() {
@@ -67,7 +79,9 @@ class _HomePageState extends State<HomePage> {
                                 image: AssetImage('assets/exampleImage.jpg'))),
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
-                            onPressed: counterIncrease,
+                            onPressed: () {
+                              launchInBrowser(launchURL);
+                            },
                             child: null)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
