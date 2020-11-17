@@ -32,7 +32,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   Future<void> launched;
-  String launchURL = "https://www.google.com";
+  String launchURL =
+      "https://us05web.zoom.us/j/82138715491?pwd=cDFxTjNHTHM1SjNiNTZLdGpmQ1J0UT09";
 
   Future<void> launchInBrowser(String url) async {
     if (await canLaunch(url)) {
@@ -40,14 +41,6 @@ class _HomePageState extends State<HomePage> {
     } else {
       print("Could not launch URL");
     }
-  }
-
-  int counter = 0;
-
-  void counterIncrease() {
-    setState(() {
-      counter++;
-    });
   }
 
   @override
@@ -61,10 +54,6 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("Click a poster to join the presentation for that project."),
-            Text(
-              '$counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
               Flexible(
                   child: Column(
@@ -88,8 +77,7 @@ class _HomePageState extends State<HomePage> {
                       children: <Widget>[
                         Container(
                             width: 200, child: Text("Ball State University")),
-                        RaisedButton(
-                            onPressed: counterIncrease, child: Text("Evaluate"))
+                        RaisedButton(onPressed: null, child: Text("Evaluate"))
                       ],
                     )
                   ])), //item 1
@@ -107,15 +95,16 @@ class _HomePageState extends State<HomePage> {
                                 image: AssetImage('assets/exampleImage2.jpg'))),
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
-                            onPressed: counterIncrease,
+                            onPressed: () {
+                              launchInBrowser(launchURL);
+                            },
                             child: null)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(
                             width: 200, child: Text("University of Findlay")),
-                        RaisedButton(
-                            onPressed: counterIncrease, child: Text("Evaluate"))
+                        RaisedButton(onPressed: null, child: Text("Evaluate"))
                       ],
                     )
                   ])), //item 2
@@ -132,14 +121,15 @@ class _HomePageState extends State<HomePage> {
                                 image: AssetImage('assets/exampleImage3.jpg'))),
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
-                            onPressed: counterIncrease,
+                            onPressed: () {
+                              launchInBrowser(launchURL);
+                            },
                             child: null)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(width: 200, child: Text("Knox College")),
-                        RaisedButton(
-                            onPressed: counterIncrease, child: Text("Evaluate"))
+                        RaisedButton(onPressed: null, child: Text("Evaluate"))
                       ],
                     )
                   ])), //item 3
@@ -159,15 +149,16 @@ class _HomePageState extends State<HomePage> {
                                 image: AssetImage('assets/exampleImage4.jpg'))),
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
-                            onPressed: counterIncrease,
+                            onPressed: () {
+                              launchInBrowser(launchURL);
+                            },
                             child: null)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(
                             width: 200, child: Text("Spring Arbor University")),
-                        RaisedButton(
-                            onPressed: counterIncrease, child: Text("Evaluate"))
+                        RaisedButton(onPressed: null, child: Text("Evaluate"))
                       ],
                     )
                   ])), //item 4
@@ -184,14 +175,15 @@ class _HomePageState extends State<HomePage> {
                                 image: AssetImage('assets/exampleImage5.jpg'))),
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
-                            onPressed: counterIncrease,
+                            onPressed: () {
+                              launchInBrowser(launchURL);
+                            },
                             child: null)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(width: 200, child: Text("Augustana College")),
-                        RaisedButton(
-                            onPressed: counterIncrease, child: Text("Evaluate"))
+                        RaisedButton(onPressed: null, child: Text("Evaluate"))
                       ],
                     )
                   ])), //item 5
@@ -208,7 +200,9 @@ class _HomePageState extends State<HomePage> {
                                 image: AssetImage('assets/exampleImage6.jpg'))),
                         child: FlatButton(
                             padding: EdgeInsets.all(0.0),
-                            onPressed: counterIncrease,
+                            onPressed: () {
+                              launchInBrowser(launchURL);
+                            },
                             child: null)),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -216,8 +210,7 @@ class _HomePageState extends State<HomePage> {
                         Container(
                             width: 200,
                             child: Text("Northern Kentucky University")),
-                        RaisedButton(
-                            onPressed: counterIncrease, child: Text("Evaluate"))
+                        RaisedButton(onPressed: null, child: Text("Evaluate"))
                       ],
                     )
                   ])), //item 6
