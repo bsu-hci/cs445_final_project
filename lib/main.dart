@@ -118,7 +118,8 @@ class _HomePageState extends State<HomePage> {
                             width: 200, child: Text("University of Findlay")),
                         RaisedButton(
                             onPressed: () {
-                              evaluation = true;
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => EvaluatePage()));
                             },
                             child: Text("Evaluate"))
                       ],
@@ -148,7 +149,8 @@ class _HomePageState extends State<HomePage> {
                         Container(width: 200, child: Text("Knox College")),
                         RaisedButton(
                             onPressed: () {
-                              evaluation = true;
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (context) => EvaluatePage()));
                             },
                             child: Text("Evaluate"))
                       ],
@@ -187,7 +189,8 @@ class _HomePageState extends State<HomePage> {
                               child: Text("Spring Arbor University")),
                           RaisedButton(
                               onPressed: () {
-                                evaluation = true;
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => EvaluatePage()));
                               },
                               child: Text("Evaluate"))
                         ],
@@ -219,7 +222,8 @@ class _HomePageState extends State<HomePage> {
                               width: 200, child: Text("Augustana College")),
                           RaisedButton(
                               onPressed: () {
-                                evaluation = true;
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => EvaluatePage()));
                               },
                               child: Text("Evaluate"))
                         ],
@@ -252,7 +256,8 @@ class _HomePageState extends State<HomePage> {
                               child: Text("Northern Kentucky University")),
                           RaisedButton(
                               onPressed: () {
-                                evaluation = true;
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => EvaluatePage()));
                               },
                               child: Text("Evaluate"))
                         ],
@@ -276,7 +281,7 @@ class EvaluatePage extends StatelessWidget {
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: <
                     Widget>[
-          Text("Enter a score 0-10 for the items below.",
+          Text("Enter a score 0-4 for the items below.",
               style: TextStyle(fontSize: 30)),
           Row(children: [
             Padding(
