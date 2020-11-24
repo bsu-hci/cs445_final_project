@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage> {
                   )),
             ),
             Padding(
-              padding: EdgeInsets.only(bottom: 40),
+              padding: EdgeInsets.only(bottom: 18),
               child: Text("Click a poster to go to that project's Zoom call.",
                   style: TextStyle(fontSize: 30)),
             ),
@@ -174,7 +174,7 @@ class _HomePageState extends State<HomePage> {
             ]), //end of row 1
 
             Padding(
-              padding: EdgeInsets.only(top: 40),
+              padding: EdgeInsets.only(top: 10),
               child:
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                 Flexible(

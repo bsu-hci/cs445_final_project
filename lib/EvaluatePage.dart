@@ -105,7 +105,7 @@ class EvaluatePage extends StatelessWidget {
                   padding: EdgeInsets.only(left: 30, right: 30),
                   child: Flexible(
                       child: TextField(
-                    maxLines: 5,
+                    maxLines: 3,
                     decoration: InputDecoration.collapsed(
                         hintText: "Enter your text here"),
                     style: TextStyle(fontSize: 20),
