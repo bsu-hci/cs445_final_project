@@ -4,7 +4,7 @@ In the event that the Consortium for Computing Sciences in Colleges Midwest Conf
 
 ## Running Deployment
 
-The running deployment of this application is the latest deployment via GitHub Pages.
+https://bsu-hci.github.io/cs445_final_project/#/
 
 ## Build Week #1 MEMO
 
@@ -17,8 +17,6 @@ In researching Flutter tools, I discovered that URLs can be opened in a browser,
 In the next iteration, Build Week #2, I plan to add the ability for advisors to enter Zoom links and poster images for each project. In my project right now, clicking all the posters opens a link to the same Zoom meeting, and the images are hard coded. In the next iteration, the software will allow an advisor to enter the Zoom link and the image for each project (which may require the images to be displayed via network, as opposed to project files, which is the current method).
 
 ## Build Week #2 MEMO
-
-Link to running deployment: https://bsu-hci.github.io/cs445_final_project/#/
 
 For Build Week #2, I added a button at the top right of the main page, where advisors, who act as administrators for a given GalleryChat event, can log in to add student projects to the event, including project title, college name, link to Zoom meeting, and project image. Clicking the “Log In as Advisor” button brings the user in, not requiring a user name or password. While this isn’t secure, I thought it would be a waste of time to write up a very basic username/password page. 
 
