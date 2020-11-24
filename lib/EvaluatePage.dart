@@ -15,6 +15,22 @@ class EvaluatePage extends StatelessWidget {
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(top: 20, bottom: 20),
+                child: Text("Please write any comments below:",
+                    style: TextStyle(fontSize: 30)),
+              ),
+              SizedBox(
+                width: 600,
+                child: Flexible(
+                  child: TextField(
+                    style: TextStyle(fontSize: 30),
+                    textAlign: TextAlign.center,
+                    keyboardType: TextInputType.number,
+                  ),
+                ),
+              ),
+
               Text("Enter a score 0-4 for the items below.",
                   style: TextStyle(fontSize: 30)),
               Row(mainAxisAlignment: MainAxisAlignment.center, children: [
@@ -91,15 +107,8 @@ class EvaluatePage extends StatelessWidget {
                       ],
                     )) //column of boxes
               ]), //main row with two columns
-
               Padding(
-                padding: EdgeInsets.only(top: 20, bottom: 20),
-                child: Text("Please write any comments below:",
-                    style: TextStyle(fontSize: 30)),
-              ),
-
-              Padding(
-                  padding: EdgeInsets.only(top: 10, bottom: 10),
+                  padding: EdgeInsets.only(top: 20, bottom: 10),
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
