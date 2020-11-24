@@ -102,19 +102,7 @@ class EvaluatePage extends StatelessWidget {
                     style: TextStyle(fontSize: 30)),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 30, right: 30),
-                child: Flexible(
-                  child: TextField(
-                    style: TextStyle(fontSize: 30),
-                    textAlign: TextAlign.center,
-                    keyboardType: TextInputType.number,
-                    decoration: InputDecoration.collapsed(
-                        hintText: "Enter your text here"),
-                  ),
-                ),
-              ),
-              Padding(
-                  padding: EdgeInsets.only(top: 0, bottom: 0),
+                  padding: EdgeInsets.only(top: 30, bottom: 0),
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
