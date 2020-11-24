@@ -21,22 +21,22 @@ class EvaluatePage extends StatelessWidget {
                 Column(
                   children: [
                     Text("Clear Goals",
-                        style: TextStyle(fontSize: 40),
+                        style: TextStyle(fontSize: 43),
                         textAlign: TextAlign.left),
                     Text("Adequate Preparation",
-                        style: TextStyle(fontSize: 40),
+                        style: TextStyle(fontSize: 43),
                         textAlign: TextAlign.left),
                     Text("Appropriate Methods",
-                        style: TextStyle(fontSize: 40),
+                        style: TextStyle(fontSize: 43),
                         textAlign: TextAlign.left),
                     Text("Significant Results",
-                        style: TextStyle(fontSize: 40),
+                        style: TextStyle(fontSize: 43),
                         textAlign: TextAlign.left),
                     Text("Effective Presentation",
-                        style: TextStyle(fontSize: 40),
+                        style: TextStyle(fontSize: 43),
                         textAlign: TextAlign.left),
                     Text("Reflective Critique",
-                        style: TextStyle(fontSize: 40),
+                        style: TextStyle(fontSize: 43),
                         textAlign: TextAlign.left),
                   ],
                 ),
@@ -97,16 +97,7 @@ class EvaluatePage extends StatelessWidget {
                 child: Text("Please write any comments below:",
                     style: TextStyle(fontSize: 30)),
               ),
-              Padding(
-                  padding: EdgeInsets.only(left: 30, right: 30),
-                  child: Flexible(
-                      child: TextField(
-                    maxLines: 3,
-                    decoration: InputDecoration.collapsed(
-                        hintText: "Enter your text here"),
-                    style: TextStyle(fontSize: 20),
-                    textAlign: TextAlign.left,
-                  ))),
+
               Padding(
                   padding: EdgeInsets.only(top: 10, bottom: 10),
                   child: Row(
