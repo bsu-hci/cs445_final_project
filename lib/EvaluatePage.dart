@@ -91,18 +91,24 @@ class EvaluatePage extends StatelessWidget {
                       ],
                     )) //column of boxes
               ]), //main row with two columns
-              Divider(
-                height: 5,
-                thickness: 3,
-                color: Colors.black,
-              ),
+
               Padding(
                 padding: EdgeInsets.only(top: 20, bottom: 20),
                 child: Text("Please write any comments below:",
                     style: TextStyle(fontSize: 30)),
               ),
               Padding(
-                  padding: EdgeInsets.only(top: 30, bottom: 0),
+                  padding: EdgeInsets.only(left: 30, right: 30),
+                  child: Flexible(
+                      child: TextField(
+                    maxLines: 3,
+                    decoration: InputDecoration.collapsed(
+                        hintText: "Enter your text here"),
+                    style: TextStyle(fontSize: 20),
+                    textAlign: TextAlign.left,
+                  ))),
+              Padding(
+                  padding: EdgeInsets.only(top: 10, bottom: 10),
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
